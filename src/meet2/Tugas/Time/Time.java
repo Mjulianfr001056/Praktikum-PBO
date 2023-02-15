@@ -12,15 +12,15 @@ public class Time {
     }
 
     public int getHour(){
-        return hour;
+        return this.hour;
     }
 
     public int getMinute(){
-        return minute;
+        return this.minute;
     }
 
     public int getSecond(){
-        return second;
+        return this.second;
     }
 
     public void setHour(int hour){
@@ -40,7 +40,8 @@ public class Time {
         this.minute = minute;
         this.second = second;
     }
-
+    
+    @Override
     public String toString(){
         String formatted = String.format("%02d:%02d:%02d",hour,minute,second);
         return formatted;
@@ -48,15 +49,15 @@ public class Time {
 
     public Time nextSecond(){
         second++;
-        if(second == 60){
+        if(second > 59){
             minute++;
             second = 0;
 
-            if(minute == 60){
+            if(minute > 59){
                 hour++;
                 minute = 0;
 
-                if(hour == 24){
+                if(hour > 23){
                 hour = 0;
                 }
             }
@@ -66,15 +67,15 @@ public class Time {
 
     public Time previousSecond(){
         second--;
-        if(second == -1){
+        if(second < 0){
             minute--;
             second = 59;
 
-            if(minute == -1){
+            if(minute <0){
                 hour--;
                 minute = 59;
 
-                if(hour == -1){
+                if(hour < 0){
                 hour = 23;
                 }
             }
