@@ -8,8 +8,13 @@ package meet2;
  *
  * @author user
  */
-public class halodunia {
+class Mahasiswa {
+    int nim;
+    String nama;
     public static void main(String[] args) {
-        System.out.println("Halo, Dunia"); 
+        Mahasiswa s1 = new Mahasiswa();
+        
+        System.out.println(s1.nim);
+        System.out.println(s1.nama);
     }
 }

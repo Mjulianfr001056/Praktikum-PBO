@@ -8,8 +8,7 @@ package meet2;
  *
  * @author user
  */
-public class halodunia {
-    public static void main(String[] args) {
-        System.out.println("Halo, Dunia"); 
-    }
+public class Mahasiswa2 {
+    int nim;
+    String nama;
 }
