@@ -19,18 +19,23 @@ public class Square extends Rectangle {
 
     public void setSide(double side){
         super.setLength(side);
-    }
-
-    public void setWidth(double side){
         super.setWidth(side);
     }
-
+    
+    @Override
+    public void setWidth(double side){
+        super.setLength(side);
+        super.setWidth(side);
+    }
+    
+    @Override
     public void setLength(double side){
         super.setLength(side);
+        super.setWidth(side);
     }
-
+    
+    @Override
     public String toString(){
-        return "[Square[Rectangle[Shape[color = "+ super.getColor() + ", filled = "+ super.isFilled() + 
-        " ], width = " + super.getWidth() +", length = "+super.getLength()+"]]";
+        return "Square[" + super.toString()+ "]";
     }
 }

@@ -45,8 +45,9 @@ public class Rectangle extends Shape {
     public double getPerimeter(){
         return 2*(width+length);
     }
-
+    
+    @Override
     public String toString(){
-        return "[Rectangle[Shape[color = "+ super.getColor() + ", filled = "+ super.isFilled() + " ], width = " +width+", length = "+length+"]]";
+        return "Rectangle[" + super.toString() + ",width=" + width + ",length="+ length +"]";
     }
 }

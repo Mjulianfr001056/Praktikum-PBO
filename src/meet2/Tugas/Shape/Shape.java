@@ -15,7 +15,7 @@ public class Shape{
     }
 
     public String getColor(){
-        return color;
+        return this.color;
     }
 
     public void setColor(String color){
@@ -23,14 +23,15 @@ public class Shape{
     }
 
     public boolean isFilled(){
-        return filled;
+        return this.filled;
     }
 
     public void setFilled(boolean filled){
         this.filled = filled;
     }
-
+    
+    @Override
     public String toString(){
-        return "Shape[color = "+ color +", filled = "+ filled + "]";
+        return "Shape[color="+ color +", filled="+ filled + "]";
     }
 }
