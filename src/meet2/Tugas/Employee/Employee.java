@@ -14,15 +14,15 @@ public class Employee {
     }
 
     public int getId(){
-        return id;
+        return this.id;
     }
 
     public String getFirstName(){
-        return firstName;
+        return this.firstName;
     }
 
     public String getLastName(){
-        return lastName;
+        return this.lastName;
     }
 
     public String getName(){
@@ -31,7 +31,7 @@ public class Employee {
     }
 
     public int getSalary(){
-        return salary;
+        return this.salary;
     }
 
     public void setSalary(int salary){
@@ -39,16 +39,17 @@ public class Employee {
     }
 
     public int getAnnualSalary(){
-        return salary*12;
+        return this.salary*12;
     }
 
     public int raiseSalary(int percent){
-        return salary * (1+ percent);
+        double p = (double) percent/100;
+        this.salary *= (1 + p);
+        return this.salary;
     }
 
     @Override
     public String toString(){
-        return "Employee[id = "+ id +",name = "+ firstName +" "
-        + lastName +",salary = " + salary + " ] ";
+        return "Employee[id="+ id +",name="+ this.getName() +",salary=" + salary + "]";
     }
 }
