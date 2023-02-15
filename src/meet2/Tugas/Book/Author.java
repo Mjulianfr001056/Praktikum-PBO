@@ -19,17 +19,16 @@ public class Author {
         return email;
     }
 
-    public char gender(){
+    public char getGender(){
         return gender;
     }
 
     public void setEmail(String email){
         this.email = email;
     }
-
+    
+    @Override
     public String toString(){
-        return "Author [name=" + name +
-        ", email = " + email +
-        ", gender =" + gender +" ]";
+        return "Author[name=" + name + ", email=" + email + ", gender=" + gender +"]";
     }
 }
