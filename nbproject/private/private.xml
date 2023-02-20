@@ -4,10 +4,26 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/ball/BallTest.java</file>
-            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/ball/Ball.java</file>
-            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/test/testMeet3.java</file>
-            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/point/MyPointTest.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet2/Tugas/Book/Book.java</file>
             <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/point/MyPoint.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/person/Person.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/person/Student.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet2/Tugas/Shape/Circle.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/cylinder/CylinderTest.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/cylinder/Shape.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/ball/Ball.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/point/MyPointTest.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/customer/Invoice.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/cylinder/Cylinder.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/cylinder/Circle.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/person/PersonTest.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet2/Tugas/Shape/Shape.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/salon/DiscountRate.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/customer/CustomerTest.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/person/Staff.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/customer/Customer.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/salon/Customer.java</file>
+            <file>file:/D:/user/Documents/NetBeansProjects/praktikum/src/meet3/salon/Visit.java</file>
         </group>
     </open-files>
 </project-private>
