@@ -26,7 +26,7 @@ public class Kantor {
         System.out.println(lutfi.getNama() + " lahir pada " + lutfi.getTanggalLahir());
         System.out.println(rahma.getNama() + " lahir pada " + rahma.getTanggalLahir());
         
-        Pegawai tuti = new Pegawai("Tuti", new Date(1997 - 1900,8,2), "6836492379", "STIS", "IT");
+        Pegawai tuti = new Pegawai("Tuti", new Date(1997 - 1900,8-1,2), "6836492379", "STIS", "IT");
         System.out.println(tuti.getName() + 
                 " lahir pada " + tuti.getTanggalLahir() +
                 " NIP: " + tuti.getNIP() +
