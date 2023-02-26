@@ -23,7 +23,7 @@ public class TestMov1 {
         System.out.println(p1);
 
         MovableCircle c1 = new MovableCircle(0, 0, 1, 2, 7);
-        System.out.println("\nMovable Point: ");
+        System.out.println("\nMovable Circle: ");
         System.out.println(c1);
 
         System.out.print("Move up: ");
