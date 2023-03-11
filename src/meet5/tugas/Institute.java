@@ -1,7 +1,6 @@
 package meet5.tugas;
 
 import java.util.ArrayList;
-import java.util.Map;
 
 public class Institute {
     private String name;

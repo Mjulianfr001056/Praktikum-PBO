@@ -1,7 +1,5 @@
 package meet5.tugas;
 
-import java.util.ArrayList;
-
 public class Lecturer extends Research_Associate{
 
     public Lecturer(String SSN, String name, String email, String fieldOfStudy, double realTeachingHour) {

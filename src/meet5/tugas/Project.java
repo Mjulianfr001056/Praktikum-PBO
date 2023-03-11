@@ -2,7 +2,6 @@ package meet5.tugas;
 
 import java.util.Date;
 
-
 public class Project {
     private String name;
     private Date start;

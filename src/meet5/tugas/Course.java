@@ -1,7 +1,5 @@
 package meet5.tugas;
 
-import java.util.ArrayList;
-
 public class Course {
     private String name;
     private String id;
