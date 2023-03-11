@@ -3,18 +3,8 @@ package meet5.tugas;
 public class Administrative_Employee extends Employee{
     private double attendance_count;
 
-    public Administrative_Employee() {
-        super();
-        attendance_count = 0;
-    }
-
-    public Administrative_Employee(String ssNo, String name, String email) {
-        super(ssNo, name, email);
-        attendance_count = 0;
-    }
-
-    public Administrative_Employee(String ssNo, String name, String email, double attendance_count) {
-        super(ssNo, name, email);
+    public Administrative_Employee(String SSN, String name, String email, double attendance_count) {
+        super(SSN, name, email);
         this.attendance_count = attendance_count;
     }
 

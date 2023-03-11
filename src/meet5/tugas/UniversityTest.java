@@ -259,66 +259,68 @@ public class UniversityTest {
 
         //Testing tiap bagian
         //Print daftar administrative_employee
-//        for(Administrative_Employee ae : daftar_AE){
-//            System.out.println(ae);
-//        }
+        for(Administrative_Employee ae : daftar_AE){
+            System.out.println(ae);
+        }
 
         //Print daftar research_associate
-//        for(Research_Associate ra : daftar_RA){
-//            System.out.println(ra);
-//        }
+        for(Research_Associate ra : daftar_RA){
+            System.out.println(ra);
+        }
+        //Print banyak employee
+        System.out.println(Employee.getCounter());
 
-        //Print daftar fakultas
-//        for(Faculty f : daftar_fakultas){
-//            System.out.println(f);
-//        }
+//        Print daftar fakultas
+        for(Faculty f : daftar_fakultas){
+            System.out.println(f);
+        }
 
         //Print daftar institut
-//        for(Faculty f : daftar_fakultas){
-//            System.out.println(f.getName());
-//            for(Institute i: f.getInstitutes_list()){
-//                System.out.println(i);
-//            }
-//            System.out.println();
-//        }
+        for(Faculty f : daftar_fakultas){
+            System.out.println(f.getName());
+            for(Institute i: f.getInstitutes_list()){
+                System.out.println(i);
+            }
+            System.out.println();
+        }
 
         //Print daftar lecturer
-//        for(Lecturer l : daftar_lecturer){
-//            System.out.println(l);
-//        }
+        for(Lecturer l : daftar_lecturer){
+            System.out.println(l);
+        }
 
         //Print daftar matkul
-//        System.out.println("Mata kuliah komputer");
-//        for(Course c : matkul_komputer){
-//            System.out.println(c);
-//        }
-//        System.out.println();
-//
-//        System.out.println("Mata kuliah teknik");
-//        for(Course c : matkul_teknik){
-//            System.out.println(c);
-//        }
-//        System.out.println();
-//
-//        System.out.println("Mata kuliah ekonomi");
-//        for(Course c : matkul_ekonomi){
-//            System.out.println(c);
-//        }
+        System.out.println("Mata kuliah komputer");
+        for(Course c : matkul_komputer){
+            System.out.println(c);
+        }
+        System.out.println();
+
+        System.out.println("Mata kuliah teknik");
+        for(Course c : matkul_teknik){
+            System.out.println(c);
+        }
+        System.out.println();
+
+        System.out.println("Mata kuliah ekonomi");
+        for(Course c : matkul_ekonomi){
+            System.out.println(c);
+        }
 
         //Print daftar ajar
-//        for(Teaching t : daftar_ajar){
-//            System.out.println(t);
-//        }
+        for(Teaching t : daftar_ajar){
+            System.out.println(t);
+        }
 
         //Print daftar project
-//        for(Project p : daftar_project){
-//            System.out.println(p);
-//        }
+        for(Project p : daftar_project){
+            System.out.println(p);
+        }
 
         //Print daftar partisipasi
-//        for(Participation p: daftar_partisipasi){
-//            System.out.println(p);
-//        }
+        for(Participation p: daftar_partisipasi){
+            System.out.println(p);
+        }
     }
 }
 

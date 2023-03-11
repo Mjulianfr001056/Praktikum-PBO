@@ -1,20 +1,20 @@
 package meet5.tugas;
 
 public abstract class Employee{
-    private String ssNo;
+    private final String SSN;
     private String name;
     private String email;
     static protected int counter = 0;
 
     public Employee() {
-        ssNo = "N/A";
+        SSN = "N/A";
         name = "N/A";
         email = "N/A";
         counter++;
     }
 
-    public Employee(String ssNo, String name, String email) {
-        this.ssNo = ssNo;
+    public Employee(String SSN, String name, String email) {
+        this.SSN = SSN;
         this.name = name;
         this.email = email;
         counter++;
@@ -22,28 +22,8 @@ public abstract class Employee{
 
     abstract public double getAttendance();
 
-    public String getSsNo() {
-        return ssNo;
-    }
-
-    public void setSsNo(String ssNo) {
-        this.ssNo = ssNo;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public static int getCounter() {
@@ -53,7 +33,7 @@ public abstract class Employee{
     @Override
     public String toString() {
         return "Employee[" +
-                "ssNo=" + ssNo +
+                "ssNo=" + SSN +
                 ", name=" + name +
                 ", email=" + email +
                 ']';

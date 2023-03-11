@@ -1,6 +1,5 @@
 package meet5.tugas;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -10,28 +9,17 @@ public class Faculty {
     private String name;
     private HashMap<String, Institute> institutes_list = new HashMap<>();
 
-    public Faculty() {
-        name = "N/A";
-    }
 
     public Faculty(String name) {
         this.name = name;
-    }
-
-    public Employee getDean() {
-        return dean;
-    }
-
-    public void setDean(Employee dean) {
-        this.dean = dean;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDean(Employee dean) {
+        this.dean = dean;
     }
 
     public void addInstitute(String name, String address){
@@ -57,6 +45,7 @@ public class Faculty {
         }
         return result;
     }
+    
     @Override
     public String toString() {
         return "Faculty[" +

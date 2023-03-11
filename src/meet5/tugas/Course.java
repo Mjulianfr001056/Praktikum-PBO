@@ -17,24 +17,8 @@ public class Course {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public float getHours() {
         return hours;
-    }
-
-    public void setHours(float hours) {
-        this.hours = hours;
     }
 
     @Override

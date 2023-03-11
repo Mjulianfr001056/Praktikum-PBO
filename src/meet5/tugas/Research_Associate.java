@@ -7,28 +7,15 @@ public class Research_Associate extends Employee{
     private double teachingHour;
     private double realTeachingHour;
 
-    public Research_Associate() {
-        super();
-        fieldOfStudy = "N/A";
-    }
-
-    public Research_Associate(String ssNo, String name, String email, String fieldOfStudy) {
-        super(ssNo, name, email);
+    public Research_Associate(String SSN, String name, String email, String fieldOfStudy) {
+        super(SSN, name, email);
         this.fieldOfStudy = fieldOfStudy;
     }
 
-    public Research_Associate(String ssNo, String name, String email, String fieldOfStudy, double realTeachingHour) {
-        super(ssNo, name, email);
+    public Research_Associate(String SSN, String name, String email, String fieldOfStudy, double realTeachingHour) {
+        super(SSN, name, email);
         this.fieldOfStudy = fieldOfStudy;
         this.realTeachingHour = realTeachingHour;
-    }
-
-    public String getFieldOfStudy() {
-        return fieldOfStudy;
-    }
-
-    public void setFieldOfStudy(String fieldOfStudy) {
-        this.fieldOfStudy = fieldOfStudy;
     }
 
     public void setTeachingHour(ArrayList<Teaching> daftar_ajar) {
