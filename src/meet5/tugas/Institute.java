@@ -1,6 +1,7 @@
 package meet5.tugas;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 public class Institute {
     private String name;
@@ -32,5 +33,23 @@ public class Institute {
         this.assigned_associate.add(assigned_associate);
     }
 
-
+    private String getAssigned_associateNames(){
+        String result = "";
+        for (Research_Associate ra : assigned_associate) {
+            if(result.equals("")){
+                result += ra.getName();
+            }else{
+                result = result + ", " + ra.getName();
+            }
+        }
+        return result;
+    }
+    @Override
+    public String toString() {
+        return "Institute[" +
+                "name=" + name +
+                ",address=" + address +
+                ",assigned_associate=" + getAssigned_associateNames() +
+                ']';
+    }
 }

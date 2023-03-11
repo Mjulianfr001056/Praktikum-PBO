@@ -1,145 +1,324 @@
 package meet5.tugas;
 
-import java.util.Random;
+import java.util.ArrayList;
+import java.util.Date;
 
 public class UniversityTest {
     public static void main(String[] args) {
         //Making list of employees
         //Administrative employees
-        Administrative_Employee ae_1 = new Administrative_Employee(
-                "374-61-XXXX", "Muhammad Julian Firdaus", "julian@univ.id");
-        Administrative_Employee ae_2 = new Administrative_Employee(
-                "248-06-XXXX", "Farhan Maulana", "farhan@univ.id");
-        Administrative_Employee ae_3 = new Administrative_Employee(
-                "338-68-XXXX", "Sabilla Hamda Syahputri", "sabilla@univ.id");
-        Administrative_Employee ae_4 = new Administrative_Employee(
-                "406-32-XXXX", "Erika Azizah Khoirunnisa", "erika@univ.id");
-        Administrative_Employee ae_5 = new Administrative_Employee(
-                "309-94-XXXX", "Syakira Rizky Andini", "syakira@univ.id");
+        ArrayList<Administrative_Employee> daftar_AE = new ArrayList<>();
 
-        System.out.println(ae_1);
+        daftar_AE.add(new Administrative_Employee(
+                "374-61-XXXX", "Muhammad Julian Firdaus", "julian@univ.id", 25));
+        daftar_AE.add(new Administrative_Employee(
+                        "248-06-XXXX", "Farhan Maulana", "farhan@univ.id", 25));
+        daftar_AE.add(new Administrative_Employee(
+                "338-68-XXXX", "Sabilla Hamda Syahputri", "sabilla@univ.id",24));
+        daftar_AE.add( new Administrative_Employee(
+                "406-32-XXXX", "Erika Azizah Khoirunnisa", "erika@univ.id", 21));
+        daftar_AE.add( new Administrative_Employee(
+                "309-94-XXXX", "Syakira Rizky Andini", "syakira@univ.id",25));
+
         //Research Associate
-        Research_Associate ra_1 = new Research_Associate(
-                "680-83-XXXX", "Adinda Ayu Pramesthi", "adin@univ.id", "Komputer");
-        Research_Associate ra_2 = new Research_Associate(
-                "309-94-XXXX", "Seizra Aulia Salsabila", "seizra@univ.id", "Komputer");
-        Research_Associate ra_3 = new Research_Associate(
-                "439-68-XXXX", "Falana Rofako Hakam", "falana@univ.id", "Komputer");
-        Research_Associate ra_4 = new Research_Associate(
-                "498-33-XXXX", "I Kadek Purna Widyarta", "kadek@univ.id", "Komputer");
-        Research_Associate ra_5 = new Research_Associate(
-                "495-41-XXXX", "Ibnu Gata", "ibnu@univ.id", "Komputer");
-        Research_Associate ra_6 = new Research_Associate(
-                "181-98-XXXX", "Rifky Maulana Putra", "rifky@univ.id", "Komputer");
+        ArrayList<Research_Associate> daftar_RA = new ArrayList<>();
 
-        Research_Associate ra_7 = new Research_Associate(
-                "680-83-XXXX", "Angga Prayoga", "angga@univ.id", "Teknik");
-        Research_Associate ra_8 = new Research_Associate(
-                "309-94-XXXX", "Calivi Kezia Laksamana Putri", "calivi@univ.id", "Teknik");
-        Research_Associate ra_9 = new Research_Associate(
-                "439-68-XXXX", "Dyah Widyastuti", "dyah@univ.id", "Teknik");
-        Research_Associate ra_10 = new Research_Associate(
-                "498-33-XXXX", "Pembayun Otsu Indiana", "pembayun@univ.id", "Teknik");
-        Research_Associate ra_11 = new Research_Associate(
-                "495-41-XXXX", "Ahmad Nadifa Al Agung", "nadifa@univ.id", "Teknik");
-        Research_Associate ra_12 = new Research_Associate(
-                "181-98-XXXX", "Muhammad Alfa Risxi", "alfa@univ.id", "Teknik");
+        daftar_RA.add(new Research_Associate(
+                "190-36-XXXX", "Adinda Ayu Pramesthi", "adin@univ.id", "Komputer"));
+        daftar_RA.add(new Research_Associate(
+                "493-23-XXXX", "Seizra Aulia Salsabila", "seizra@univ.id", "Komputer"));
+        daftar_RA.add(new Research_Associate(
+                "250-73-XXXX", "Falana Rofako Hakam", "falana@univ.id", "Komputer"));
+        daftar_RA.add(new Research_Associate(
+                "078-52-XXXX", "I Kadek Purna Widyarta", "kadek@univ.id", "Komputer"));
+        daftar_RA.add(new Research_Associate(
+                "374-64-XXXX", "Ibnu Gata", "ibnu@univ.id", "Komputer"));
+        daftar_RA.add(new Research_Associate(
+                "589-54-XXXX", "Rifky Maulana Putra", "rifky@univ.id", "Komputer"));
 
-        Research_Associate ra_13 = new Research_Associate(
-                "680-83-XXXX", "Ainul Baharuddin", "ainul@univ.id", "Ekonomi");
-        Research_Associate ra_14 = new Research_Associate(
-                "309-94-XXXX", "Fajar Malik Noor Ahmad", "fajar@univ.id", "Ekonomi");
-        Research_Associate ra_15 = new Research_Associate(
-                "439-68-XXXX", "Faiz Fathur Rahman", "faiz@univ.id", "Ekonomi");
-        Research_Associate ra_16 = new Research_Associate(
-                "498-33-XXXX", "Salma Afna Humaira Hikmatullah", "salma@univ.id", "Ekonomi");
-        Research_Associate ra_17 = new Research_Associate(
-                "495-41-XXXX", "Syarifah Annisa Assegaf", "annisa@univ.id", "Ekonomi");
-        Research_Associate ra_18 = new Research_Associate(
-                "181-98-XXXX", "Radyah Hemalya", "radyah@univ.id", "Ekonomi");
+        daftar_RA.add(new Research_Associate(
+                "578-50-XXXX", "Angga Prayoga", "angga@univ.id", "Teknik"));
+        daftar_RA.add(new Research_Associate(
+                "426-61-XXXX", "Calivi Kezia Laksamana Putri", "calivi@univ.id", "Teknik"));
+        daftar_RA.add( new Research_Associate(
+                "482-68-XXXX", "Dyah Widyastuti", "dyah@univ.id", "Teknik"));
+        daftar_RA.add( new Research_Associate(
+                "428-54-XXXX", "Pembayun Otsu Indiana", "pembayun@univ.id", "Teknik"));
+        daftar_RA.add( new Research_Associate(
+                "209-08-XXXX", "Ahmad Nadifa Al Agung", "nadifa@univ.id", "Teknik"));
+        daftar_RA.add( new Research_Associate(
+                "610-54-XXXX", "Muhammad Alfa Risxi", "alfa@univ.id", "Teknik"));
+
+        daftar_RA.add( new Research_Associate(
+                "331-21-XXXX", "Ainul Baharuddin", "ainul@univ.id", "Ekonomi"));
+        daftar_RA.add( new Research_Associate(
+                "579-96-XXXX", "Fajar Malik Noor Ahmad", "fajar@univ.id", "Ekonomi"));
+        daftar_RA.add( new Research_Associate(
+                "605-34-XXXX", "Faiz Fathur Rahman", "faiz@univ.id", "Ekonomi"));
+        daftar_RA.add( new Research_Associate(
+                "031-37-XXXX", "Salma Afna Humaira Hikmatullah", "salma@univ.id", "Ekonomi"));
+        daftar_RA.add( new Research_Associate(
+                "519-25-XXXX", "Syarifah Annisa Assegaf", "annisa@univ.id", "Ekonomi"));
+        daftar_RA.add( new Research_Associate(
+                "255-87-XXXX", "Radyah Hemalya", "radyah@univ.id", "Ekonomi"));
 
         //Making List of Faculty
-        Faculty f1 = new Faculty("Fakultas Informatika dan Komputer"); f1.setDean(ae_1);
-        Faculty f2 = new Faculty("Fakultas Teknik"); f2.setDean(ae_2);
-        Faculty f3 = new Faculty("Fakultas Ekonomi dan Bisnis"); f3.setDean(ae_3);
+        ArrayList<Faculty> daftar_fakultas = new ArrayList<>();
+
+        daftar_fakultas.add(new Faculty("Fakultas Informatika dan Komputer"));
+        daftar_fakultas.get(0).setDean(daftar_AE.get(0));
+
+        daftar_fakultas.add(new Faculty("Fakultas Teknik"));
+        daftar_fakultas.get(1).setDean(daftar_AE.get(1));
+
+        daftar_fakultas.add(new Faculty("Fakultas Ekonomi dan Bisnis"));
+        daftar_fakultas.get(2).setDean(daftar_AE.get(2));
 
         //Adding List of Institute
-        f1.addInstitute("Informatika Terapan", "Jl. Otista I");
-        f1.addInstitute("Informasi Manajemen", "Jl. Otista II");
-        f1.addInstitute("Teknologi Kuantum", "Jl. Otista III");
-        f1.addInstitute("Ilmu Komputer", "Jl. Otista IV");
+        Faculty tmp_f = daftar_fakultas.get(0);
 
-        f2.addInstitute("Teknik Elektro", "Jl. Sensus I");
-        f2.addInstitute("Teknik Informasi", "Jl. Sensus II");
-        f2.addInstitute("Teknik Robotika", "Jl. Sensus III");
+        tmp_f.addInstitute("Informatika Terapan", "Jl. Otista I");
+        tmp_f.addInstitute("Informasi Manajemen", "Jl. Otista II");
+        tmp_f.addInstitute("Teknologi Kuantum", "Jl. Otista III");
+        tmp_f.addInstitute("Ilmu Komputer", "Jl. Otista IV");
 
-        f3.addInstitute("Kebendaharaan Negara", "Jl. Mangga I");
-        f3.addInstitute("Ekonomi Murni", "Jl. Mangga II");
+        tmp_f = daftar_fakultas.get(1);
+
+        tmp_f.addInstitute("Teknik Elektro", "Jl. Sensus I");
+        tmp_f.addInstitute("Teknik Informasi", "Jl. Sensus II");
+        tmp_f.addInstitute("Teknik Robotika", "Jl. Sensus III");
+
+        tmp_f = daftar_fakultas.get(2);
+
+        tmp_f.addInstitute("Kebendaharaan Negara", "Jl. Mangga I");
+        tmp_f.addInstitute("Ekonomi Murni", "Jl. Mangga II");
 
         //Assigning each research associate
         //Fakultas Informatika dan Komputer
-        f1.findInstitute("Informatika Terapan").assign_associate(ra_1);
-        f1.findInstitute("Informatika Terapan").assign_associate(ra_3);
-        f1.findInstitute("Informatika Terapan").assign_associate(ra_5);
+        Institute tmp_i = daftar_fakultas.get(0).findInstitute("Informatika Terapan");
 
-        f1.findInstitute("Informasi Manajemen").assign_associate(ra_1);
-        f1.findInstitute("Informasi Manajemen").assign_associate(ra_2);
-        f1.findInstitute("Informasi Manajemen").assign_associate(ra_4);
+        tmp_i.assign_associate(daftar_RA.get(0));
+        tmp_i.assign_associate(daftar_RA.get(2));
+        tmp_i.assign_associate(daftar_RA.get(4));
 
-        f1.findInstitute("Teknologi Kuantum").assign_associate(ra_2);
-        f1.findInstitute("Teknologi Kuantum").assign_associate(ra_3);
-        f1.findInstitute("Teknologi Kuantum").assign_associate(ra_4);
-        f1.findInstitute("Teknologi Kuantum").assign_associate(ra_6);
+        tmp_i = daftar_fakultas.get(0).findInstitute("Informasi Manajemen");
 
-        f1.findInstitute("Ilmu Komputer").assign_associate(ra_1);
-        f1.findInstitute("Ilmu Komputer").assign_associate(ra_5);
-        f1.findInstitute("Ilmu Komputer").assign_associate(ra_6);
+        tmp_i.assign_associate(daftar_RA.get(0));
+        tmp_i.assign_associate(daftar_RA.get(1));
+        tmp_i.assign_associate(daftar_RA.get(3));
+
+        tmp_i = daftar_fakultas.get(0).findInstitute("Teknologi Kuantum");
+
+        tmp_i.assign_associate(daftar_RA.get(1));
+        tmp_i.assign_associate(daftar_RA.get(2));
+        tmp_i.assign_associate(daftar_RA.get(3));
+        tmp_i.assign_associate(daftar_RA.get(5));
+
+        tmp_i = daftar_fakultas.get(0).findInstitute("Ilmu Komputer");
+        tmp_i.assign_associate(daftar_RA.get(0));
+        tmp_i.assign_associate(daftar_RA.get(4));
+        tmp_i.assign_associate(daftar_RA.get(5));
 
         //Fakultas Teknik
-        f2.findInstitute("Teknik Elektro").assign_associate(ra_7);
-        f2.findInstitute("Teknik Elektro").assign_associate(ra_8);
-        f2.findInstitute("Teknik Elektro").assign_associate(ra_9);
-        f2.findInstitute("Teknik Elektro").assign_associate(ra_10);
+        tmp_i = daftar_fakultas.get(1).findInstitute("Teknik Elektro");
+        tmp_i.assign_associate(daftar_RA.get(6));
+        tmp_i.assign_associate(daftar_RA.get(7));
+        tmp_i.assign_associate(daftar_RA.get(8));
+        tmp_i.assign_associate(daftar_RA.get(9));
 
-        f2.findInstitute("Teknik Informasi").assign_associate(ra_9);
-        f2.findInstitute("Teknik Informasi").assign_associate(ra_12);
+        tmp_i = daftar_fakultas.get(1).findInstitute("Teknik Informasi");
+        tmp_i.assign_associate(daftar_RA.get(8));
+        tmp_i.assign_associate(daftar_RA.get(11));
 
-        f2.findInstitute("Teknik Robotika").assign_associate(ra_7);
-        f2.findInstitute("Teknik Robotika").assign_associate(ra_8);
-        f2.findInstitute("Teknik Robotika").assign_associate(ra_11);
+        tmp_i = daftar_fakultas.get(1).findInstitute("Teknik Robotika");
+        tmp_i.assign_associate(daftar_RA.get(6));
+        tmp_i.assign_associate(daftar_RA.get(7));
+        tmp_i.assign_associate(daftar_RA.get(10));
 
         //Fakultas Ekonomi dan Bisnis
-        f3.findInstitute("Kebendaharaan Negara").assign_associate(ra_13);
-        f3.findInstitute("Kebendaharaan Negara").assign_associate(ra_14);
-        f3.findInstitute("Kebendaharaan Negara").assign_associate(ra_15);
+        tmp_i = daftar_fakultas.get(2).findInstitute("Kebendaharaan Negara");
+        tmp_i.assign_associate(daftar_RA.get(12));
+        tmp_i.assign_associate(daftar_RA.get(13));
+        tmp_i.assign_associate(daftar_RA.get(14));
 
-        f3.findInstitute("Ekonomi Murni").assign_associate(ra_16);
-        f3.findInstitute("Ekonomi Murni").assign_associate(ra_17);
-        f3.findInstitute("Ekonomi Murni").assign_associate(ra_18);
+        tmp_i = daftar_fakultas.get(2).findInstitute("Ekonomi Murni");
+        tmp_i.assign_associate(daftar_RA.get(15));
+        tmp_i.assign_associate(daftar_RA.get(16));
+        tmp_i.assign_associate(daftar_RA.get(17));
 
         //Making list of lecturers
-        Lecturer l1 = new Lecturer(
-                "xxx", "Muhammad Afnan Alfian", "afnan@univ.id", "Komputer");
-        Lecturer l2 = new Lecturer(
-                "xxx", "Sisilia Agustina Manalu", "sisil@univ.id", "Komputer");
-        Lecturer l3 = new Lecturer(
-                "xxx", "Syawalgi Wahyu Imani", "syawal@univ.id", "Teknik");
-        Lecturer l4 = new Lecturer(
-                "xxx", "Nasywa Nur Amalia", "nasywa@univ.id", "Teknik");
-        Lecturer l5 = new Lecturer(
-                "xxx", "Afif Tegar Ardika", "tegar@univ.id", "Ekonomi");
-        Lecturer l6 = new Lecturer(
-                "xxx", "Aida Muthia Suhaib", "Aida@univ.id", "Ekonomi");
+        ArrayList<Lecturer> daftar_lecturer = new ArrayList<>();
+        daftar_lecturer.add(new Lecturer(
+                "xxx", "Muhammad Afnan Alfian", "afnan@univ.id", "Komputer", 8.5));
+        daftar_lecturer.add(new Lecturer(
+                "xxx", "Sisilia Agustina Manalu", "sisil@univ.id", "Komputer", 5));
+        daftar_lecturer.add(new Lecturer(
+                "xxx", "Syawalgi Wahyu Imani", "syawal@univ.id", "Teknik", 5));
+        daftar_lecturer.add(new Lecturer(
+                "xxx", "Nasywa Nur Amalia", "nasywa@univ.id", "Teknik", 7));
+        daftar_lecturer.add(new Lecturer(
+                "xxx", "Afif Tegar Ardika", "tegar@univ.id", "Ekonomi", 8));
+        daftar_lecturer.add(new Lecturer(
+                "xxx", "Aida Muthia Suhaib", "Aida@univ.id", "Ekonomi", 10));
 
         //Making list of courses
-        Course ck_1 = new Course("Teori Komputasi", "K001", 2.0f);
-        Course ck_2 = new Course("Interaksi Manusia dan Komputer", "K002", 2.0f);
-        Course ck_3 = new Course("Manajemen Proyek", "K003", 4.0f);
-        Course ck_4 = new Course("Pemograman Berorientasi Objek", "K004", 4.0f);
-        Course ck_5 = new Course("Soft Computing", "K005", 1.0f);
-        Course ck_6 = new Course("Aljabar Linear", "K006", 2.5f);
+        ArrayList<Course> matkul_komputer = new ArrayList<>();
 
-        Course ct_1 = new Course("Pengantar Lingkungan Lahan Basah",  "T001", 2.0f);
+        matkul_komputer.add(new Course("Teori Komputasi", "K001", 2.0f));
+        matkul_komputer.add(new Course("Interaksi Manusia dan Komputer", "K002", 2.0f));
+        matkul_komputer.add(new Course("Manajemen Proyek", "K003", 4.0f));
+        matkul_komputer.add(new Course("Pemograman Berorientasi Objek", "K004", 4.0f));
+        matkul_komputer.add(new Course("Soft Computing", "K005", 1.0f));
+        matkul_komputer.add(new Course("Aljabar Linear", "K006", 2.5f));
+
+        ArrayList<Course> matkul_teknik = new ArrayList<>();
+
+        matkul_teknik.add(new Course("Pengantar Lingkungan Lahan Basah",  "T001", 2.0f));
+        matkul_teknik.add(new Course("Pengantar Ilmu Teknik",  "T002", 1.0f));
+        matkul_teknik.add(new Course("Fisika Teknik",  "T003", 3.0f));
+        matkul_teknik.add(new Course("Statistika Teknik",  "T004", 3.0f));
+        matkul_teknik.add(new Course("Kalkulus Lanjut",  "T005", 2.0f));
+        matkul_teknik.add(new Course("Rangkaian Listrik",  "T006", 4.0f));
+
+        ArrayList<Course> matkul_ekonomi = new ArrayList<>();
+
+        matkul_ekonomi.add( new Course("Ekonomi Mikro", "E001", 2.0f));
+        matkul_ekonomi.add( new Course("Ekonomi Makro", "E002", 2.0f));
+        matkul_ekonomi.add( new Course("Sistem Nasional", "E003", 3.0f));
+        matkul_ekonomi.add( new Course("Ekonometrika", "E004", 3.0f));
+        matkul_ekonomi.add( new Course("Manajemen Ilmu Bisnis", "E005", 4.0f));
+        matkul_ekonomi.add( new Course("Statistika Ekonomi", "E006", 4.0f));
+
+
+        //Assigning courses to lecturers
+        ArrayList<Teaching> daftar_ajar = new ArrayList<>();
+
+        //Matkul Komputer
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(0), matkul_komputer.get(0)));
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(0), matkul_komputer.get(3)));
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(0), matkul_komputer.get(5)));
+
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(1), matkul_komputer.get(1)));
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(1), matkul_komputer.get(2)));
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(1), matkul_komputer.get(4)));
+
+        //Matkul Teknik
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(2), matkul_teknik.get(0)));
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(2), matkul_teknik.get(1)));
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(2), matkul_teknik.get(2)));
+
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(3), matkul_teknik.get(3)));
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(3), matkul_teknik.get(4)));
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(3), matkul_teknik.get(5)));
+
+        //Matkul Ekonomi
+
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(4), matkul_ekonomi.get(0)));
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(4), matkul_ekonomi.get(1)));
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(4), matkul_ekonomi.get(4)));
+
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(5), matkul_ekonomi.get(2)));
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(5), matkul_ekonomi.get(3)));
+        daftar_ajar.add(new Teaching(daftar_lecturer.get(5), matkul_ekonomi.get(5)));
+
+        //Set teaching hour every Lecturer
+        for(Lecturer l : daftar_lecturer){
+            l.setTeachingHour(daftar_ajar);
+        }
+        //Making list of Projects
+        ArrayList<Project> daftar_project = new ArrayList<>();
+
+        daftar_project.add(new Project("Pembangunan Sistem Informasi BPS Kabupaten Tabalong",
+                new Date(2023-1900, 2-1, 15), new Date(2023-1900, 7-1, 25)));
+        daftar_project.add(new Project("Pengembangan Lahan Gambut",
+                new Date(2022-1900, 7-1, 11), new Date(2023-1900, 1-1, 24)));
+        daftar_project.add(new Project("Publikasi Tingkat Inflasi Tahunan",
+                new Date(2022-1900, 10-1, 1), new Date(2023-1900, 10-1, 4)));
+
+        //Assigning Research Associate to Projects
+        ArrayList<Participation> daftar_partisipasi = new ArrayList<>();
+
+        //Partisipasi di project 1
+        Project tmp_p = daftar_project.get(0);
+
+        daftar_partisipasi.add(new Participation(8, tmp_p, daftar_RA.get(1)));
+        daftar_partisipasi.add(new Participation(4, tmp_p, daftar_RA.get(2)));
+        daftar_partisipasi.add(new Participation(3.5, tmp_p, daftar_RA.get(4)));
+
+        //Partisipasi di project 2
+        tmp_p = daftar_project.get(1);
+        daftar_partisipasi.add(new Participation(4.5, tmp_p, daftar_RA.get(7)));
+        daftar_partisipasi.add(new Participation(1, tmp_p, daftar_RA.get(9)));
+        daftar_partisipasi.add(new Participation(2.5, tmp_p, daftar_RA.get(11)));
+
+        //Partisipasi di project 3
+        tmp_p = daftar_project.get(2);
+        daftar_partisipasi.add(new Participation(2, tmp_p, daftar_RA.get(12)));
+        daftar_partisipasi.add(new Participation(1.5, tmp_p, daftar_RA.get(15)));
+        daftar_partisipasi.add(new Participation(3, tmp_p, daftar_RA.get(17)));
+
+        //Testing tiap bagian
+        //Print daftar administrative_employee
+//        for(Administrative_Employee ae : daftar_AE){
+//            System.out.println(ae);
+//        }
+
+        //Print daftar research_associate
+//        for(Research_Associate ra : daftar_RA){
+//            System.out.println(ra);
+//        }
+
+        //Print daftar fakultas
+//        for(Faculty f : daftar_fakultas){
+//            System.out.println(f);
+//        }
+
+        //Print daftar institut
+//        for(Faculty f : daftar_fakultas){
+//            System.out.println(f.getName());
+//            for(Institute i: f.getInstitutes_list()){
+//                System.out.println(i);
+//            }
+//            System.out.println();
+//        }
+
+        //Print daftar lecturer
+//        for(Lecturer l : daftar_lecturer){
+//            System.out.println(l);
+//        }
+
+        //Print daftar matkul
+//        System.out.println("Mata kuliah komputer");
+//        for(Course c : matkul_komputer){
+//            System.out.println(c);
+//        }
+//        System.out.println();
+//
+//        System.out.println("Mata kuliah teknik");
+//        for(Course c : matkul_teknik){
+//            System.out.println(c);
+//        }
+//        System.out.println();
+//
+//        System.out.println("Mata kuliah ekonomi");
+//        for(Course c : matkul_ekonomi){
+//            System.out.println(c);
+//        }
+
+        //Print daftar ajar
+//        for(Teaching t : daftar_ajar){
+//            System.out.println(t);
+//        }
+
+        //Print daftar project
+//        for(Project p : daftar_project){
+//            System.out.println(p);
+//        }
+
+        //Print daftar partisipasi
+//        for(Participation p: daftar_partisipasi){
+//            System.out.println(p);
+//        }
     }
 }
 

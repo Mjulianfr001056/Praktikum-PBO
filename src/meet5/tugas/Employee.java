@@ -53,9 +53,9 @@ public abstract class Employee{
     @Override
     public String toString() {
         return "Employee[" +
-                "ssNo= " + ssNo +
-                ", name='" + name +
-                ", email='" + email +
+                "ssNo=" + ssNo +
+                ", name=" + name +
+                ", email=" + email +
                 ']';
     }
 }

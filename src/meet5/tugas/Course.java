@@ -6,7 +6,6 @@ public class Course {
     private String name;
     private String id;
     private float hours;
-    private ArrayList<Lecturer> lecturer_list;
 
     public Course(String name, String id, float hours) {
         this.name = name;
@@ -38,11 +37,12 @@ public class Course {
         this.hours = hours;
     }
 
-    public ArrayList<Lecturer> getLecturer_list() {
-        return lecturer_list;
-    }
-
-    public void add_lecturer(Lecturer lecturer){
-        lecturer_list.add(lecturer);
+    @Override
+    public String toString() {
+        return "Course[" +
+                "name=" + name +
+                ",id=" + id +
+                ",hours=" + hours +
+                ']';
     }
 }

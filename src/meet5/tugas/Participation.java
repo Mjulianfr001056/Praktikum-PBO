@@ -34,4 +34,13 @@ public class Participation {
     public void setResearch_associate(Research_Associate research_associate) {
         this.research_associate = research_associate;
     }
+
+    @Override
+    public String toString() {
+        return "Participation[" +
+                "hours=" + hours +
+                ",project=" + project.getName() +
+                ",research_associate=" + research_associate.getName() +
+                ']';
+    }
 }
