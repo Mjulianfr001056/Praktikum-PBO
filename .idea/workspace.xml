@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="335f3ca5-04cb-4df2-94db-e04b6ebf8908" name="Changes" comment="Delete unused method">
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meet5/tugas/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/meet5/tugas/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meet5/tugas/Institute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/meet5/tugas/Institute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meet5/tugas/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/meet5/tugas/Lecturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/meet5/tugas/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/meet5/tugas/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Administrative_Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Administrative_Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Faculty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Faculty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Institute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Institute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Lecturer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Lecturer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Research_Associate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/Research_Associate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/UniversityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikum-PBO/meet5/tugas/UniversityTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,20 +48,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/user/Documents/GitHub/Praktikum-PBO",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
-  <component name="RunManager" selected="Application.UniversityTest">
-    <configuration name="CustomerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="meet3.customer.CustomerTest" />
+}]]></component>
+  <component name="RunManager" selected="Application.BankAccountTest">
+    <configuration name="BankAccountTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bankaccount.BankAccountTest" />
       <module name="Praktikum-PBO" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="meet3.customer.*" />
+          <option name="PATTERN" value="bankaccount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="meet3.person.PersonTest" />
+    <configuration name="SalonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="meet3.salon.SalonTest" />
       <module name="Praktikum-PBO" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="meet3.person.*" />
+          <option name="PATTERN" value="meet3.salon.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="meet3.salon.SalonTest" />
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="meet5.tugas.Test2" />
       <module name="Praktikum-PBO" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="meet3.salon.*" />
+          <option name="PATTERN" value="meet5.tugas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BankAccountTest" />
+        <item itemvalue="Application.Test2" />
         <item itemvalue="Application.UniversityTest" />
         <item itemvalue="Application.SalonTest" />
         <item itemvalue="Application.CylinderTest" />
-        <item itemvalue="Application.PersonTest" />
-        <item itemvalue="Application.CustomerTest" />
       </list>
     </recent_temporary>
   </component>
